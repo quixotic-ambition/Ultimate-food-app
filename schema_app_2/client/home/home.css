@@ -1,0 +1,215 @@
+html,body,main, #__blaze-root
+{
+	height:100%;
+}
+body
+{
+	background-image: url(http://www.hd-wallpapersdownload.com/upload/bulk-upload/green-apple-fruits-1920x1080-wallpaper-dowload.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin:0;
+	/*z-index: -1;*/
+}
+
+.navbar 
+{
+
+	/*7c9d14 green*/
+	margin:auto;
+	height: 70px;
+	background: black;
+	opacity: 0.8;
+	border: none;
+	border-bottom: 2px solid #7F0000;
+	vertical-align: middle; 	
+	
+}
+.navbar-nav
+{
+	margin-top:10px;
+}
+
+
+.nav a
+{
+	opacity: 0.8;
+	text-align: center;
+	font-size: 18px;
+	
+}
+.pop-up-box-login
+{
+	background: black;
+	opacity: 0.8;
+	height:100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;	
+
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
+
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	box-align: center;
+
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	box-pack: center;
+
+	-webkit-box-direction: normal;
+	-moz-box-direction: normal;
+	box-direction: normal;
+ 	   
+}
+.pop-up-contents-login
+{
+	padding: 35px 15px;
+    /*background: #ea0b29;*/
+    /*opacity: 0.8;*/
+    
+
+}
+
+
+.login input
+{
+	background-color: #000000;
+	border: none;
+	color:#d3d3d3;
+    opacity: 0.8;
+    font: inherit;
+    font-size: 1.2em;
+    padding: 8px;
+    border-bottom: 1px solid #7F0000;
+}
+.login .password-input
+{
+	padding: 5px 0px;
+}
+
+#login-button
+{
+    background-color: #000000;
+    color: #7c9d14;
+    border: 2px solid #000000;
+    font-size: 17px;
+    text-align: center;
+    /*padding: 8px 20px 8px 20px;*/
+}
+
+.forgot-link
+{
+	font-size: 12px;
+	color: #7F0000;
+	float: right;
+	margin-top: 7px;
+}
+.forgot-link:hover
+{
+	
+}
+.button-form
+{
+	margin-top: 5px;
+}
+
+
+
+.social-buttons 
+{
+	
+	/*position: relative;*/
+	/*bottom: 0;*/
+	
+	display:block;
+	text-align: center;
+	margin-top: 5px;
+	/*float:left;*/
+
+}
+.social-buttons  i
+{
+	
+	/*background-color: #7F0000;*/
+	/*border:1px solid #7F0000;*/
+	line-height: 25px;
+	width:25px;
+	height: 25px;
+	border-radius: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
+	color:#7c9d14;
+	
+}
+.social-buttons  i:hover
+{
+	background-color: #7c9d14;
+	color:#7F0000;
+	/*border-radius: 20px;
+	width:25px;
+	height: 25px;
+	line-height: 25px;
+	margin-right: 5px;
+	margin-left: 5px;*/
+}
+.pop-up-box-signUp
+{
+	background: black;
+	opacity: 0.8;
+	height:100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
+
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	box-align: center;
+
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	box-pack: center;
+
+	-webkit-box-direction: normal;
+	-moz-box-direction: normal;
+	box-direction: normal;
+ 	   
+}
+
+.pop-up-contents-signUp
+{
+	padding: 35px 15px;
+    /*background: #ea0b29;*/
+    /*opacity: 0.8;*/
+    
+
+}
+
+.sign-up input
+{
+	background-color: #000000;
+	border: none;
+	color:#d3d3d3;
+    opacity: 0.8;
+    font: inherit;
+    font-size: 1.2em;
+    padding: 8px;
+    border-bottom: 1px solid #7F0000;
+}
+
+
+#sign-up-button
+{
+    background-color: #000000;
+    color: #7c9d14;
+    border: 2px solid #000000;
+    font-size: 14px;
+    padding: 8px 20px 8px 20px;
+    text-align: center;
+}
+

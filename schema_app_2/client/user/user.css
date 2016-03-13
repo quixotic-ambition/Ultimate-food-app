@@ -1,0 +1,93 @@
+.user-daddy-div
+{
+	text-align: center;
+	height:100%;
+
+}
+.user-top-part
+{
+	background: rgba(124, 126, 127,0.6);
+	height: 33%;
+	text-align: center;
+	/*margin-top: 10px*/
+}
+
+.btn-group .btn-default
+{
+	background: transparent;
+	border-width:1px;
+	border-color: rgba(255,255,255,0.6);
+	color:rgba(255,255,255,0.6);
+}
+.btn-group .btn-default:focus
+{
+	background-color:rgba(204,25,36,0.4);
+	border-width:2px;
+	border-color: rgba(255,255,255,0.6);
+	border-radius: 5px;
+}
+
+.item-entry-form
+{
+	
+	margin:auto;
+	width: 15%;
+
+}
+.new-item
+{
+	margin-top: 50px;
+	display: inline-block;
+	/*width:25%;*/
+}
+.new-item button
+{
+	margin-top:10px;
+	background: transparent;
+	border-radius: 0;
+	border: 1px solid #fff;
+	padding: 10px;
+	color:white;
+	font-size:13px;
+	text-transform: uppercase;
+}
+.new-item input
+{
+	border:0;
+	padding: 8px;
+	background: rgba(255,255,255,0.6);
+}
+
+
+
+.user-down-part
+{
+	background: white;
+	opacity: 0.7;
+	height:77%;
+}
+
+.item_list ul li
+{
+	color:#7c9d14;
+	font-weight:400;
+	font-size: 20px;
+}
+.item_list ul
+{
+	list-style-type: none;
+}
+
+.user-logout
+{
+	position:absolute;
+	top:15px;
+	left:20px;
+	font-size: 35px;
+	color:black;
+}
+
+.user-logout:hover
+{
+	color:#CC1924;
+}
