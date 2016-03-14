@@ -1,14 +1,20 @@
+// Accounts.onRestPasswordLink = function(token,done) {
+//   console.log("is there a point to all this??", token);
+//   alert("ASD")
+// };
+
+  
 if (Meteor.isClient) {
 
   Meteor.subscribe("newRestaurant");
   Meteor.subscribe("newItem");
   Template.home.events({
-
-    "click #logout-link":function(event){
-
+    "click #logout-link":function(event) {
       Meteor.logout();
     }
   });
+
+
 
  Template.login_page.helpers({
  	isNewUser:function(){
@@ -40,23 +46,28 @@ if (Meteor.isClient) {
  		check=Meteor.loginWithPassword(username,password);
  		console.log(check + " " + Meteor.user());  	
    	},
+
+    "click.forgot-link":function(event){
+
+    }
+    
    	});
    
-   Template.signUp_page.events({
-   	"submit.sign-up":function(event){
-    event.preventDefault();
-   	var userName = event.target.username.value;
- 		var passWord = event.target.password.value;
-    var password_again=event.target.password_again.value;
+   // Template.signUp_page.events({
+   // 	"submit.sign-up":function(event){
+   //  event.preventDefault();
+   // 	var userName = event.target.username.value;
+ 		// var passWord = event.target.password.value;
+   //  var password_again=event.target.password_again.value;
     
-    if(passWord===password_again){
-    Meteor.call("SignUp",userName,passWord);
-    console.log("reached here?");
-    }
+   //  if(passWord===password_again){
+   //  Meteor.call("SignUp",userName,passWord);
+   //  console.log("reached here?");
+   //  }
 
 
-    }
+   //  }
  		  	
-   });
+   // });
 
 }

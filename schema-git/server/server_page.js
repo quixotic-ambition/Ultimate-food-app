@@ -47,7 +47,10 @@ Meteor.methods({
 			email:email
 		});
 
-		return temp;
+		console.log("username: " + user);
+		console.log(temp + "yhyhyhyhyh");
+		if(temp)
+		Accounts.sendResetPasswordEmail(temp);
 	},   
 
 
@@ -61,30 +64,29 @@ Meteor.methods({
 
 	},
 
-	SignUp:function(username,password){
+	// SignUp:function(username,password){
 
-		Accounts.createUser({
-			username:username,
-			password:password
-		});
-	},
-	sendEmail:function(toEmail)
-	{
-		console.log("right hand up");
-		Email.send({
-			to:toEmail,
-			from:'arun@the_boss.awesome',
-			subject:"Welcome to the club!!",
-			html: '<a href="http://localhost:3000/signUp">here</a>'
+	// 	Accounts.createUser({
+	// 		username:username,
+	// 		password:password
+	// 	});
+	// },
+	// sendEmail:function(toEmail)
+	// {
+	// 	console.log("right hand up");
+	// 	Email.send({
+	// 		to:toEmail,
+	// 		from:'arun@the_boss.awesome',
+	// 		subject:"Welcome to the club!!",
+	// 		html: '<a href="http://localhost:3000/signUp">here</a>'
 
-		});
+	// 	});
 		// throw new Meteor.Error( "Email-verificationIsh", 'Sent email' );
         
 
-	},
+	// },
 	fetchEmail:function(un)
 	{
-		console.log("yo yo yo");
 		var temp= Accounts.findUserByUsername(un);
 		if(temp)
 		{

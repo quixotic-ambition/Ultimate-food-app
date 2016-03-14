@@ -45,3 +45,10 @@ FlowRouter.route('/signUp', {
         console.log("This is signUp");
     }
 });
+FlowRouter.route('/reset-page', {
+    name: 'to_set_pass',
+    action() {
+        BlazeLayout.render('home',{ main:'signUp_page'});
+        console.log("This is signUp");
+    }
+});
