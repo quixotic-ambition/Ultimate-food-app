@@ -38,7 +38,7 @@ if (Meteor.isClient) {
 
    Template.login_page.events({
    	"submit.login":function(event){
-   		console.log("hello.is it me your looking for");
+   		
       event.preventDefault();
    		var username = event.target.username.value;
  		var password = event.target.password.value;
@@ -47,27 +47,20 @@ if (Meteor.isClient) {
  		console.log(check + " " + Meteor.user());  	
    	},
 
-    "click.forgot-link":function(event){
+    "click #forgot-link":function(event){
 
-    }
+      event.preventDefault();
+      console.log(" forgot link function ");
+      var username = $('#username').val();
+      if(username)
+        Meteor.call("resetEmail",username,function(error,result){
+
+          FlowRouter.go("/reset-page");
+        });
+      else
+        alert("please enter username");
+    },
     
    	});
-   
-   // Template.signUp_page.events({
-   // 	"submit.sign-up":function(event){
-   //  event.preventDefault();
-   // 	var userName = event.target.username.value;
- 		// var passWord = event.target.password.value;
-   //  var password_again=event.target.password_again.value;
-    
-   //  if(passWord===password_again){
-   //  Meteor.call("SignUp",userName,passWord);
-   //  console.log("reached here?");
-   //  }
-
-
-   //  }
- 		  	
-   // });
 
 }

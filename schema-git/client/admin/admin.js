@@ -7,15 +7,6 @@
       console.log("comment allez vous?");
       return Restaurants.find();
     },
-    retrieveEmail:function(){
-
-      var something= $("#usernmae-admin").val;
-      console.log(something);
-
-      },
-      
-    
-
 });
 
   Template.admin.events({
